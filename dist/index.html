@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>পাতার পর পাতা | বই পড়ি, ভাবি, লিখি - বাংলা বই পর্যালোচনা</title>
+  <meta name="description" content="পাতার পর পাতা - একটি প্রিমিয়াম বাংলা বই পর্যালোচনা ও সাহিত্য চর্চার প্ল্যাটফর্ম। সেরা বাংলা ক্লাসিক ও সমকালীন বইয়ের গভীর পর্যালোচনা।">
+  <meta name="keywords" content="বাংলা বই, বই পর্যালোচনা, বিভূতিভূষণ, রবীন্দ্রনাথ ঠাকুর, শরৎচন্দ্র, পথের পাঁচালী, শেষের কবিতা, গোরা, দেবদাস, Bengali Book Review">
+
+  <!-- Google Fonts for Bengali and English Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Sans+Bengali:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=4.1">
+</head>
+<body>
+
+  <!-- ==============================================
+       1. NAVIGATION / HEADER
+       ============================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" id="brandLogo" aria-label="পাতার পর পাতা হোমপেজ">
+        <div class="logo-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6.5C16.8 3.5 10.5 3 4 3C2.3 3 1 4.3 1 6V26.5C1 27.3 1.7 28 2.5 28C8.8 28 15.2 28.5 19.5 31C19.8 31.2 20.2 31.2 20.5 31C24.8 28.5 31.2 28 37.5 28C38.3 28 39 27.3 39 26.5V6C39 4.3 37.7 3 36 3C29.5 3 23.2 3.5 20 6.5Z" stroke="#DFB66D" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M20 6.5V30.5" stroke="#DFB66D" stroke-width="2" stroke-linecap="round"/>
+            <path d="M6 9H15M6 14H15M6 19H13" stroke="#DFB66D" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+            <path d="M25 9H34M25 14H34M27 19H34" stroke="#DFB66D" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="site-title">পাতার পর পাতা</span>
+          <span class="site-tagline">বই পড়ি, ভাবি, লিখি</span>
+        </div>
+      </a>
+
+      <!-- Center Desktop Navigation -->
+      <nav class="main-nav" id="mainNav" aria-label="প্রধান নেভিগেশন">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active" id="navHome">Home</a></li>
+          <li class="nav-item"><a href="#featuredReviews" class="nav-link" id="navBooks">Books</a></li>
+          <li class="nav-item"><a href="#featuredReviews" class="nav-link" id="navReviews">Reviews</a></li>
+          <li class="nav-item"><a href="#categories" class="nav-link" id="navCategories">Categories</a></li>
+          <li class="nav-item"><a href="#quoteSection" class="nav-link" id="navAbout">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action Icons & Mobile Menu Button -->
+      <div class="header-actions">
+        <!-- Search Button -->
+        <button class="action-btn" id="searchBtn" aria-label="অনুসন্ধান করুন" title="বই খুঁজুন">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- User Profile Button -->
+        <button class="action-btn" id="userBtn" aria-label="ব্যবহারকারী প্রোফাইল" title="প্রোফাইল">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="মেনু খুলুন" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link active">Home (হোম)</a></li>
+        <li><a href="#featuredReviews" class="mobile-nav-link">Books (বইসমূহ)</a></li>
+        <li><a href="#featuredReviews" class="mobile-nav-link">Reviews (পর্যালোচনা)</a></li>
+        <li><a href="#categories" class="mobile-nav-link">Categories (ক্যাটাগরি)</a></li>
+        <li><a href="#quoteSection" class="mobile-nav-link">About (আমাদের কথা)</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <p class="drawer-motto">“বই পড়ি, ভাবি, লিখি”</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==============================================
+       2. HERO SECTION
+       ============================================== -->
+  <section class="hero-section" id="hero">
+    <!-- Atmospheric dust motes particles canvas -->
+    <canvas id="heroParticles" class="hero-particles" aria-hidden="true"></canvas>
+
+    <!-- Warm library lighting ambience overlay -->
+    <div class="hero-ambience-overlay"></div>
+    <div class="hero-vignette"></div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title animate-on-load">
+          ভালো বই<br>
+          ভালো মানুষ তৈরি করে
+        </h1>
+        <p class="hero-subtitle animate-on-load">
+          বই শুধু গল্প নয়, এটা এক একটা নতুন দুনিয়া,<br>
+          একটা নতুন ভাবনা, একটা নতুন তুমি।
+        </p>
+        <div class="hero-cta-wrapper animate-on-load">
+          <a href="#featuredReviews" class="btn-primary" id="heroCtaBtn">
+            <span>বইগুলো দেখুন</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <a href="#featuredReviews" class="scroll-indicator" id="scrollIndicator" aria-label="নিচের সেকশনে যান">
+      <div class="scroll-indicator-pill">
+        <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <polyline points="19 12 12 19 5 12"></polyline>
+        </svg>
+      </div>
+    </a>
+  </section>
+
+  <!-- ==============================================
+       3. FEATURED REVIEWS - THREEUI 3D BOOK SHOWCASE
+       ============================================== -->
+  <section class="featured-reviews-section" id="featuredReviews">
+    <!-- Ambient 3D stage glow and particles -->
+    <div class="showcase-ambient-glow" aria-hidden="true"></div>
+    <div class="showcase-spotlight" aria-hidden="true"></div>
+
+    <div class="section-container">
+      
+      <!-- Section Header -->
+      <div class="section-header reveal-item">
+        <div class="header-left">
+          <div class="showcase-pill-badge">
+            <span class="pill-sparkle">✦</span>
+            <span class="pill-text">ThreeUI 3D Book Showcase</span>
+            <span class="pill-dot"></span>
+            <span class="pill-sub">নির্বাচিত সাহিত্য সংকলন</span>
+          </div>
+          <span class="section-subtitle">Featured Reviews & 3D Showcase —</span>
+          <h2 class="section-title">সাম্প্রতিক পর্যালোচনা ও নির্বাচিত গ্রন্থ</h2>
+        </div>
+
+        <div class="header-right">
+          <!-- View switcher: 3D Deck vs Shelf Grid -->
+          <div class="showcase-view-controls" aria-label="ভিউ মোড নির্বাচন করুন">
+            <button class="view-mode-btn active" id="viewModeDeckBtn" title="3D স্পেশিয়াল ডেক ভিউ">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <span>3D ডেক</span>
+            </button>
+            <button class="view-mode-btn" id="viewModeShelfBtn" title="বুকশেলফ গ্রিড ভিউ">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+              <span>শেলফ গ্রিড</span>
+            </button>
+          </div>
+
+          <a href="#featuredReviews" class="view-all-link" id="viewAllReviews">
+            <span>সব পর্যালোচনা দেখুন</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3D Showcase Stage -->
+      <div class="showcase-stage-wrapper reveal-item" id="showcaseStageWrapper">
+
+        <!-- Stage Header Toolbar (Counter + Audio FX Toggle + 3D Help) -->
+        <div class="stage-toolbar">
+          <div class="stage-counter">
+            <span class="counter-label">বই নং:</span>
+            <span class="counter-active" id="currentBookNum">০১</span>
+            <span class="counter-divider">/</span>
+            <span class="counter-total" id="totalBooksNum">০৪</span>
+          </div>
+
+          <div class="mobile-swipe-badge" aria-hidden="true">
+            <span>👈 সোয়াইপ করুন 👉</span>
+          </div>
+
+          <div class="stage-interactive-tips">
+            <span class="tip-badge">🖱️ মাউস নাড়িয়ে 3D অনুভূতি নিন</span>
+            <span class="tip-badge tip-keys">⌨️ ◀ / ▶ কীবোর্ড তীরচিহ্ন</span>
+          </div>
+
+          <div class="stage-actions-right">
+            <button class="audio-toggle-btn" id="audioToggleBtn" aria-label="সাউন্ড এফেক্ট সক্রিয় বা নিষ্ক্রিয় করুন" title="সাউন্ড ইফেক্ট অন/অফ">
+              <span class="audio-icon" id="audioIcon">🔊</span>
+              <span class="audio-text">শব্দ প্রভাব</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3D Interactive Carousel / Shelf Display Area -->
+        <div class="reviews-carousel-container" id="reviewsCarouselContainer">
+          
+          <!-- Previous Button -->
+          <button class="carousel-nav prev" id="carouselPrevBtn" aria-label="পূর্ববর্তী বই পর্যালোচনা" title="আগের বই">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- 3D Books Container / Track -->
+          <div class="reviews-track mode-deck" id="reviewsTrack">
+            
+            <!-- Book 1: Pather Panchali -->
+            <article class="review-card book-3d-card active" data-book-id="1" data-index="0" tabindex="0" role="button" aria-label="পথের পাঁচালী পর্যালোচনা">
+              <div class="book-3d-viewport">
+                <div class="book-3d-volume" id="bookVolume1">
+                  <!-- Front Cover Face -->
+                  <div class="book-face book-face-front">
+                    <img src="assets/images/cover_pather_panchali.jpg" alt="পথের পাঁচালী বইয়ের প্রচ্ছদ" class="book-cover-img" loading="lazy">
+                    <div class="book-emboss-frame"></div>
+                    <div class="book-glare"></div>
+                    <div class="book-ribbon" title="ক্লাসিক সংকলন"></div>
+                    <span class="book-badge-corner">৪.৮ ★</span>
+                  </div>
+
+                  <!-- Book Inside Page (revealed when cover opens) -->
+                  <div class="book-face book-face-inside">
+                    <div class="inside-page-content">
+                      <span class="inside-ornament">❦</span>
+                      <h4 class="inside-title">পথের পাঁচালী</h4>
+                      <p class="inside-author">বিভূতিভূষণ বন্দ্যোপাধ্যায়</p>
+                      <hr class="inside-divider">
+                      <p class="inside-quote">“অনন্তকালের মানুষের জীবনযাত্রার এক অনন্ত কাব্য।”</p>
+                      <button class="inside-open-btn card-read-btn" data-book="1">পূর্ণ পাঠ ➔</button>
+                    </div>
+                  </div>
+
+                  <!-- 3D Left Spine Face -->
+                  <div class="book-face book-face-spine">
+                    <span class="spine-gold-band top"></span>
+                    <span class="spine-title">পথের পাঁচালী</span>
+                    <span class="spine-author">বিভূতিভূষণ</span>
+                    <span class="spine-ornament">❖</span>
+                    <span class="spine-gold-band bottom"></span>
+                  </div>
+
+                  <!-- 3D Right Page Block (Page edges) -->
+                  <div class="book-face book-face-pages-right"></div>
+                  <!-- 3D Top Page Block -->
+                  <div class="book-face book-face-pages-top"></div>
+                  <!-- 3D Bottom Page Block -->
+                  <div class="book-face book-face-pages-bottom"></div>
+
+                  <!-- 3D Back Cover Face -->
+                  <div class="book-face book-face-back">
+                    <div class="back-cover-pattern"></div>
+                    <div class="back-cover-emblem">পাতার পর পাতা</div>
+                  </div>
+                </div>
+
+                <!-- Realistic Floor Dynamic Drop Shadow -->
+                <div class="book-floor-shadow"></div>
+              </div>
+
+              <!-- Card Details (For Accessibility, Semantic SEO, & Grid Mode) -->
+              <div class="card-details">
+                <div class="card-genre-pill">উপন্যাস / প্রকৃতি সাহিত্য</div>
+                <h3 class="book-title">পথের পাঁচালী</h3>
+                <p class="book-author">বিভূতিভূষণ বন্দ্যোপাধ্যায়</p>
+                <div class="star-rating" aria-label="রেটিং ৪.৮ এর মধ্যে ৫">
+                  <div class="stars" aria-hidden="true">
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                  </div>
+                  <span class="rating-num">4.8</span>
+                </div>
+                <p class="review-snippet">
+                  “এই বই শুধু একটি গল্প নয়, এটা একটি জীবনকে দেখার একটি অন্যরকম দৃষ্টিভঙ্গি।”
+                </p>
+                <div class="card-actions-row">
+                  <button class="card-read-btn" data-book="1">বিস্তারিত পড়ুন</button>
+                  <button class="card-flip-btn" data-book="1" title="কভার খুলুন">📖 প্রিভিউ</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Book 2: Shesher Kobita -->
+            <article class="review-card book-3d-card" data-book-id="2" data-index="1" tabindex="0" role="button" aria-label="শেষের কবিতা পর্যালোচনা">
+              <div class="book-3d-viewport">
+                <div class="book-3d-volume" id="bookVolume2">
+                  <div class="book-face book-face-front">
+                    <img src="assets/images/cover_sesher_kobita.jpg" alt="শেষের কবিতা বইয়ের প্রচ্ছদ" class="book-cover-img" loading="lazy">
+                    <div class="book-emboss-frame"></div>
+                    <div class="book-glare"></div>
+                    <div class="book-ribbon" title="রোমান্টিক ক্লাসিক"></div>
+                    <span class="book-badge-corner">৪.৬ ★</span>
+                  </div>
+
+                  <div class="book-face book-face-inside">
+                    <div class="inside-page-content">
+                      <span class="inside-ornament">❦</span>
+                      <h4 class="inside-title">শেষের কবিতা</h4>
+                      <p class="inside-author">রবীন্দ্রনাথ ঠাকুর</p>
+                      <hr class="inside-divider">
+                      <p class="inside-quote">“ভালোবাসা পাত্র বিশেষে নয়, ভালোবাসা আত্মার ধর্ম।”</p>
+                      <button class="inside-open-btn card-read-btn" data-book="2">পূর্ণ পাঠ ➔</button>
+                    </div>
+                  </div>
+
+                  <div class="book-face book-face-spine">
+                    <span class="spine-gold-band top"></span>
+                    <span class="spine-title">শেষের কবিতা</span>
+                    <span class="spine-author">রবীন্দ্রনাথ ঠাকুর</span>
+                    <span class="spine-ornament">❖</span>
+                    <span class="spine-gold-band bottom"></span>
+                  </div>
+
+                  <div class="book-face book-face-pages-right"></div>
+                  <div class="book-face book-face-pages-top"></div>
+                  <div class="book-face book-face-pages-bottom"></div>
+
+                  <div class="book-face book-face-back">
+                    <div class="back-cover-pattern"></div>
+                    <div class="back-cover-emblem">পাতার পর পাতা</div>
+                  </div>
+                </div>
+
+                <div class="book-floor-shadow"></div>
+              </div>
+
+              <div class="card-details">
+                <div class="card-genre-pill">উপন্যাস / রোমান্টিক দর্শন</div>
+                <h3 class="book-title">শেষের কবিতা</h3>
+                <p class="book-author">রবীন্দ্রনাথ ঠাকুর</p>
+                <div class="star-rating" aria-label="রেটিং ৪.৬ এর মধ্যে ৫">
+                  <div class="stars" aria-hidden="true">
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star half">★</span>
+                  </div>
+                  <span class="rating-num">4.6</span>
+                </div>
+                <p class="review-snippet">
+                  “প্রেম, দর্শন আর জীবনের এক গভীর উপলব্ধি— শেষের কবিতা তারই সাক্ষী।”
+                </p>
+                <div class="card-actions-row">
+                  <button class="card-read-btn" data-book="2">বিস্তারিত পড়ুন</button>
+                  <button class="card-flip-btn" data-book="2" title="কভার খুলুন">📖 প্রিভিউ</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Book 3: Gora -->
+            <article class="review-card book-3d-card" data-book-id="3" data-index="2" tabindex="0" role="button" aria-label="গোরা পর্যালোচনা">
+              <div class="book-3d-viewport">
+                <div class="book-3d-volume" id="bookVolume3">
+                  <div class="book-face book-face-front">
+                    <img src="assets/images/cover_pora.jpg" alt="গোরা বইয়ের প্রচ্ছদ" class="book-cover-img" loading="lazy">
+                    <div class="book-emboss-frame"></div>
+                    <div class="book-glare"></div>
+                    <div class="book-ribbon" title="মহাকাব্যিক উপন্যাস"></div>
+                    <span class="book-badge-corner">৪.৫ ★</span>
+                  </div>
+
+                  <div class="book-face book-face-inside">
+                    <div class="inside-page-content">
+                      <span class="inside-ornament">❦</span>
+                      <h4 class="inside-title">গোরা</h4>
+                      <p class="inside-author">রবীন্দ্রনাথ ঠাকুর</p>
+                      <hr class="inside-divider">
+                      <p class="inside-quote">“আজ আমি সত্য সত্যই ভারতবর্ষীয়। আমার মধ্যে কোনো জাতের বিরোধ নেই।”</p>
+                      <button class="inside-open-btn card-read-btn" data-book="3">পূর্ণ পাঠ ➔</button>
+                    </div>
+                  </div>
+
+                  <div class="book-face book-face-spine">
+                    <span class="spine-gold-band top"></span>
+                    <span class="spine-title">গোরা</span>
+                    <span class="spine-author">রবীন্দ্রনাথ ঠাকুর</span>
+                    <span class="spine-ornament">❖</span>
+                    <span class="spine-gold-band bottom"></span>
+                  </div>
+
+                  <div class="book-face book-face-pages-right"></div>
+                  <div class="book-face book-face-pages-top"></div>
+                  <div class="book-face book-face-pages-bottom"></div>
+
+                  <div class="book-face book-face-back">
+                    <div class="back-cover-pattern"></div>
+                    <div class="back-cover-emblem">পাতার পর পাতা</div>
+                  </div>
+                </div>
+
+                <div class="book-floor-shadow"></div>
+              </div>
+
+              <div class="card-details">
+                <div class="card-genre-pill">উপন্যাস / সামাজিক ও রাজনৈতিক</div>
+                <h3 class="book-title">গোরা</h3>
+                <p class="book-author">রবীন্দ্রনাথ ঠাকুর</p>
+                <div class="star-rating" aria-label="রেটিং ৪.৫ এর মধ্যে ৫">
+                  <div class="stars" aria-hidden="true">
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star half">★</span>
+                  </div>
+                  <span class="rating-num">4.5</span>
+                </div>
+                <p class="review-snippet">
+                  “পরিচয়ের সন্ধানে এক তরুণের যাত্রা, যা আমাদের সমাজ ও চিন্তার নতুন দরজা খুলে দেয়।”
+                </p>
+                <div class="card-actions-row">
+                  <button class="card-read-btn" data-book="3">বিস্তারিত পড়ুন</button>
+                  <button class="card-flip-btn" data-book="3" title="কভার খুলুন">📖 প্রিভিউ</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Book 4: Devdas -->
+            <article class="review-card book-3d-card" data-book-id="4" data-index="3" tabindex="0" role="button" aria-label="দেবদাস পর্যালোচনা">
+              <div class="book-3d-viewport">
+                <div class="book-3d-volume" id="bookVolume4">
+                  <div class="book-face book-face-front">
+                    <img src="assets/images/cover_devdas.jpg" alt="দেবদাস বইয়ের প্রচ্ছদ" class="book-cover-img" loading="lazy">
+                    <div class="book-emboss-frame"></div>
+                    <div class="book-glare"></div>
+                    <div class="book-ribbon" title="কালজয়ী ট্র্যাজেডি"></div>
+                    <span class="book-badge-corner">৪.৪ ★</span>
+                  </div>
+
+                  <div class="book-face book-face-inside">
+                    <div class="inside-page-content">
+                      <span class="inside-ornament">❦</span>
+                      <h4 class="inside-title">দেবদাস</h4>
+                      <p class="inside-author">শরৎচন্দ্র চট্টোপাধ্যায়</p>
+                      <hr class="inside-divider">
+                      <p class="inside-quote">“ভুল করিবার অধিকার মানুষের আছে, কিন্তু তাহাকে সংশোধনের সুযোগও দেওয়া কর্তব্য।”</p>
+                      <button class="inside-open-btn card-read-btn" data-book="4">পূর্ণ পাঠ ➔</button>
+                    </div>
+                  </div>
+
+                  <div class="book-face book-face-spine">
+                    <span class="spine-gold-band top"></span>
+                    <span class="spine-title">দেবদাস</span>
+                    <span class="spine-author">শরৎচন্দ্র চট্টোপাধ্যায়</span>
+                    <span class="spine-ornament">❖</span>
+                    <span class="spine-gold-band bottom"></span>
+                  </div>
+
+                  <div class="book-face book-face-pages-right"></div>
+                  <div class="book-face book-face-pages-top"></div>
+                  <div class="book-face book-face-pages-bottom"></div>
+
+                  <div class="book-face book-face-back">
+                    <div class="back-cover-pattern"></div>
+                    <div class="back-cover-emblem">পাতার পর পাতা</div>
+                  </div>
+                </div>
+
+                <div class="book-floor-shadow"></div>
+              </div>
+
+              <div class="card-details">
+                <div class="card-genre-pill">উপন্যাস / চিরায়ত ক্লাসিক</div>
+                <h3 class="book-title">দেবদাস</h3>
+                <p class="book-author">শরৎচন্দ্র চট্টোপাধ্যায়</p>
+                <div class="star-rating" aria-label="রেটিং ৪.৪ এর মধ্যে ৫">
+                  <div class="stars" aria-hidden="true">
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star empty">★</span>
+                  </div>
+                  <span class="rating-num">4.4</span>
+                </div>
+                <p class="review-snippet">
+                  “অপূর্ণ প্রেমের এক চিরন্তন কাহিনী, যা আজও সমানভাবে হৃদয় ছুঁয়ে যায়।”
+                </p>
+                <div class="card-actions-row">
+                  <button class="card-read-btn" data-book="4">বিস্তারিত পড়ুন</button>
+                  <button class="card-flip-btn" data-book="4" title="কভার খুলুন">📖 প্রিভিউ</button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Next Button -->
+          <button class="carousel-nav next" id="carouselNextBtn" aria-label="পরবর্তী বই পর্যালোচনা" title="পরের বই">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Polished Mahogany Bookshelf Stage Ledge with Brass Inlay -->
+        <div class="bookshelf-stage-ledge" aria-hidden="true">
+          <div class="ledge-top-reflection"></div>
+          <div class="ledge-brass-trim"></div>
+          <div class="ledge-wood-front"></div>
+        </div>
+
+        <!-- Active Book Interactive Dossier & Control Center (ThreeUI Editorial Showcase) -->
+        <div class="showcase-dossier-panel" id="showcaseDossierPanel">
+          <div class="dossier-grid">
+            
+            <div class="dossier-col-meta">
+              <div class="dossier-badge" id="dossierGenre">উপন্যাস / প্রকৃতি সাহিত্য</div>
+              <h3 class="dossier-title" id="dossierTitle">পথের পাঁচালী</h3>
+              <p class="dossier-author">রচয়িতা: <span id="dossierAuthor">বিভূতিভূষণ বন্দ্যোপাধ্যায়</span></p>
+              
+              <div class="dossier-rating-row">
+                <div class="dossier-stars" id="dossierStars">★★★★★</div>
+                <span class="dossier-score" id="dossierScore">৪.৮ / ৫.০</span>
+                <span class="dossier-year-badge" id="dossierYear">প্রকাশকাল: ১৯২৯</span>
+              </div>
+            </div>
+
+            <div class="dossier-col-quote">
+              <div class="dossier-quote-box">
+                <span class="dossier-quote-mark">“</span>
+                <p class="dossier-quote-text" id="dossierQuote">“পথের পাঁচালী কেবল পল্লীজীবনের আলেখ্য নয়, অনন্তকালের মানুষের জীবনযাত্রার এক অনন্ত কাব্য।”</p>
+              </div>
+              <p class="dossier-snippet-text" id="dossierSnippet">
+                “এই বই শুধু একটি গল্প নয়, এটা একটি জীবনকে দেখার একটি অন্যরকম দৃষ্টিভঙ্গি।”
+              </p>
+            </div>
+
+            <div class="dossier-col-actions">
+              <button class="dossier-btn-primary" id="dossierReadBtn">
+                <span class="btn-icon">📖</span>
+                <span>পূর্ণ পর্যালোচনা পাঠ করুন</span>
+              </button>
+              
+              <div class="dossier-secondary-actions">
+                <button class="dossier-icon-btn" id="dossierSpinBtn" title="3D ৩৬০° ভিউ চালু করুন">
+                  <span class="icon">🔄</span>
+                  <span>3D ৩৬০° ভিউ</span>
+                </button>
+                <button class="dossier-icon-btn" id="dossierCoverBtn" title="কভার খুলুন বা বন্ধ করুন">
+                  <span class="icon">📖</span>
+                  <span>কভার খুলুন</span>
+                </button>
+                <button class="dossier-icon-btn" id="dossierBookmarkBtn" title="বুকমার্কে সংরক্ষণ করুন">
+                  <span class="icon">🔖</span>
+                  <span>সংরক্ষণ</span>
+                </button>
+                <button class="dossier-icon-btn" id="dossierShareBtn" title="বন্ধুদের সাথে শেয়ার করুন">
+                  <span class="icon">🔗</span>
+                  <span>শেয়ার</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Carousel Indicator Dots & Progress -->
+          <div class="showcase-dots-container" id="showcaseDotsContainer" role="tablist" aria-label="বই নির্বাচন করুন">
+            <button class="showcase-dot active" data-index="0" role="tab" aria-selected="true" aria-label="বই ১: পথের পাঁচালী"></button>
+            <button class="showcase-dot" data-index="1" role="tab" aria-selected="false" aria-label="বই ২: শেষের কবিতা"></button>
+            <button class="showcase-dot" data-index="2" role="tab" aria-selected="false" aria-label="বই ৩: গোরা"></button>
+            <button class="showcase-dot" data-index="3" role="tab" aria-selected="false" aria-label="বই ৪: দেবদাস"></button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       4. CATEGORY SECTION
+       ============================================== -->
+  <section class="category-section" id="categories">
+    <div class="category-dark-overlay"></div>
+    <div class="section-container">
+      
+      <!-- Section Header -->
+      <div class="section-header dark-header reveal-item">
+        <div class="header-left">
+          <span class="section-subtitle">Explore Categories —</span>
+          <h2 class="section-title">বিষয়ভিত্তিক বই</h2>
+        </div>
+        <div class="header-right">
+          <a href="#categories" class="view-all-link gold-link" id="viewAllCategories">
+            <span>সব ক্যাটাগরি দেখুন</span>
+            <span class="arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 6 Category Cards Grid -->
+      <div class="categories-grid reveal-item">
+        
+        <!-- Category 1: উপন্যাস -->
+        <a href="#featuredReviews" class="category-card" data-category="উপন্যাস">
+          <div class="card-border-ornament top-left"></div>
+          <div class="card-border-ornament top-right"></div>
+          <div class="card-border-ornament bottom-left"></div>
+          <div class="card-border-ornament bottom-right"></div>
+          
+          <div class="category-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+          </div>
+          <span class="category-name">উপন্যাস</span>
+        </a>
+
+        <!-- Category 2: কবিতা -->
+        <a href="#featuredReviews" class="category-card" data-category="কবিতা">
+          <div class="card-border-ornament top-left"></div>
+          <div class="card-border-ornament top-right"></div>
+          <div class="card-border-ornament bottom-left"></div>
+          <div class="card-border-ornament bottom-right"></div>
+          
+          <div class="category-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L3 11.5V21h9.5z"></path>
+              <line x1="16" y1="8" x2="2" y2="22"></line>
+              <line x1="17.5" y1="15" x2="9" y2="15"></line>
+            </svg>
+          </div>
+          <span class="category-name">কবিতা</span>
+        </a>
+
+        <!-- Category 3: প্রবন্ধ -->
+        <a href="#featuredReviews" class="category-card" data-category="প্রবন্ধ">
+          <div class="card-border-ornament top-left"></div>
+          <div class="card-border-ornament top-right"></div>
+          <div class="card-border-ornament bottom-left"></div>
+          <div class="card-border-ornament bottom-right"></div>
+          
+          <div class="category-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.54z"></path>
+              <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.54z"></path>
+            </svg>
+          </div>
+          <span class="category-name">প্রবন্ধ</span>
+        </a>
+
+        <!-- Category 4: সাহিত্য ইতিহাস -->
+        <a href="#featuredReviews" class="category-card" data-category="সাহিত্য ইতিহাস">
+          <div class="card-border-ornament top-left"></div>
+          <div class="card-border-ornament top-right"></div>
+          <div class="card-border-ornament bottom-left"></div>
+          <div class="card-border-ornament bottom-right"></div>
+          
+          <div class="category-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="2" y1="21" x2="22" y2="21"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+              <path d="M12 2L3 7v2h18V7L12 2z"></path>
+              <line x1="6" y1="9" x2="6" y2="18"></line>
+              <line x1="10" y1="9" x2="10" y2="18"></line>
+              <line x1="14" y1="9" x2="14" y2="18"></line>
+              <line x1="18" y1="9" x2="18" y2="18"></line>
+            </svg>
+          </div>
+          <span class="category-name">সাহিত্য ইতিহাস</span>
+        </a>
+
+        <!-- Category 5: ভ্রমণ ও অনুপ্রেরণা -->
+        <a href="#featuredReviews" class="category-card" data-category="ভ্রমণ ও অনুপ্রেরণা">
+          <div class="card-border-ornament top-left"></div>
+          <div class="card-border-ornament top-right"></div>
+          <div class="card-border-ornament bottom-left"></div>
+          <div class="card-border-ornament bottom-right"></div>
+          
+          <div class="category-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+          </div>
+          <span class="category-name">ভ্রমণ ও অনুপ্রেরণা</span>
+        </a>
+
+        <!-- Category 6: অন্যান্য -->
+        <a href="#featuredReviews" class="category-card" data-category="অন্যান্য">
+          <div class="card-border-ornament top-left"></div>
+          <div class="card-border-ornament top-right"></div>
+          <div class="card-border-ornament bottom-left"></div>
+          <div class="card-border-ornament bottom-right"></div>
+          
+          <div class="category-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v8"></path>
+              <path d="M4.93 10.93a10 10 0 0 1 14.14 0"></path>
+              <path d="M2 18h20"></path>
+              <path d="M12 10a5 5 0 0 0-5 5v3h10v-3a5 5 0 0 0-5-5z"></path>
+            </svg>
+          </div>
+          <span class="category-name">অন্যান্য</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==============================================
+       5. LITERARY QUOTE SECTION
+       ============================================== -->
+  <section class="literary-quote-section" id="quoteSection">
+    <div class="section-container">
+      <div class="quote-card reveal-item">
+        
+        <div class="quote-content-col">
+          <div class="quote-mark-icon" aria-hidden="true">“</div>
+          <blockquote class="literary-quote-text">
+            “একটি ভালো বই হাজারো বন্ধুর চেয়ে বেশি আপন করে তোলে।”
+          </blockquote>
+          <cite class="quote-author">— রবীন্দ্রনাথ ঠাকুর</cite>
+        </div>
+
+        <div class="quote-illustration-col">
+          <div class="vintage-sketch-frame">
+            <img src="assets/images/sketch_book_parchment.jpg" alt="প্রাচীন বই ও কালির দোয়াত-কলমের হাতে আঁকা স্কেচ" class="vintage-sketch-img" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       6. FOOTER
+       ============================================== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="footer-container">
+      
+      <!-- Col 1: Brand -->
+      <div class="footer-col brand-col">
+        <div class="brand-logo footer-logo">
+          <div class="logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 6.5C16.8 3.5 10.5 3 4 3C2.3 3 1 4.3 1 6V26.5C1 27.3 1.7 28 2.5 28C8.8 28 15.2 28.5 19.5 31C19.8 31.2 20.2 31.2 20.5 31C24.8 28.5 31.2 28 37.5 28C38.3 28 39 27.3 39 26.5V6C39 4.3 37.7 3 36 3C29.5 3 23.2 3.5 20 6.5Z" stroke="#DFB66D" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M20 6.5V30.5" stroke="#DFB66D" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="site-title">পাতার পর পাতা</span>
+            <span class="site-tagline">বই পড়ি, ভাবি, লিখি</span>
+          </div>
+        </div>
+        <p class="footer-about-text">
+          বাঙালি সাহিত্যের চিরায়ত সম্পদ ও নতুন চিন্তার মেলবন্ধন। প্রতিটি বইয়ের পাতার ভাঁজে লুকিয়ে থাকা জীবনবোধকে খুঁজে পাওয়ার এক আন্তরিক সাহিত্যিক প্রয়াস।
+        </p>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col links-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#featuredReviews">Books</a></li>
+          <li><a href="#featuredReviews">Reviews</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#quoteSection">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Follow Us -->
+      <div class="footer-col follow-col">
+        <h4 class="footer-heading">Follow Us</h4>
+        <div class="social-links-grid">
+          <!-- Facebook -->
+          <a href="https://facebook.com" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://instagram.com" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://youtube.com" class="social-icon-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#120c08"></polygon>
+            </svg>
+          </a>
+          <!-- X (Twitter) -->
+          <a href="https://twitter.com" class="social-icon-btn" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+            </svg>
+          </a>
+          <!-- Pinterest -->
+          <a href="https://pinterest.com" class="social-icon-btn" aria-label="Pinterest" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0a12 12 0 0 0-4.37 23.18c-.05-.98-.1-2.49.02-3.56.11-.98.71-6.17.71-6.17s-.18-.36-.18-.9c0-.84.49-1.47 1.1-1.47.52 0 .77.39.77.86 0 .52-.33 1.3-.5 2.02-.14.61.3 1.1 1.03 1.1 1.24 0 2.19-1.3 2.19-3.18 0-1.66-1.2-2.83-2.9-2.83-2.12 0-3.37 1.59-3.37 3.24 0 .64.25 1.33.56 1.71a.3.3 0 0 1 .07.29c-.08.33-.26 1.05-.3 1.2-.05.21-.17.25-.4.15-1.49-.69-2.42-2.87-2.42-4.62 0-3.76 2.73-7.21 7.87-7.21 4.13 0 7.35 2.94 7.35 6.88 0 4.11-2.59 7.41-6.18 7.41-1.21 0-2.34-.63-2.73-1.37l-.74 2.84c-.27 1.04-1 2.35-1.49 3.15A11.99 11.99 0 0 0 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 4: Newsletter -->
+      <div class="footer-col newsletter-col">
+        <h4 class="footer-heading">Stay Updated</h4>
+        <p class="newsletter-desc">নতুন বইয়ের রিভিউ ও লেখালেখি পেতে আমাদের সাথে থাকুন</p>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <div class="newsletter-input-group">
+            <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="আপনার ইমেইল দিন" required aria-label="আপনার ইমেইল ঠিকানা">
+            <button type="submit" class="newsletter-submit-btn" aria-label="সাবস্ক্রাইব করুন">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+          <div class="form-feedback" id="newsletterFeedback" aria-live="polite"></div>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom-bar">
+      <div class="footer-container bottom-flex">
+        <p class="copyright-text">© 2025 পাতার পর পাতা. All rights reserved.</p>
+        <p class="footer-motto-text">বই ভাবুক, তুমি ভাবো</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================
+       MODALS & OVERLAYS
+       ============================================== -->
+  
+  <!-- Search Modal -->
+  <div class="search-modal" id="searchModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="searchModalTitle">
+    <div class="search-modal-backdrop" id="searchModalBackdrop"></div>
+    <div class="search-modal-content">
+      <div class="search-modal-header">
+        <h3 id="searchModalTitle" class="search-modal-title">বই ও পর্যালোচনা খুঁজুন</h3>
+        <button class="modal-close-btn" id="searchModalClose" aria-label="বন্ধ করুন">✕</button>
+      </div>
+      <div class="search-input-box">
+        <svg class="search-box-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="siteSearchInput" placeholder="বইয়ের নাম অথবা লেখকের নাম লিখুন..." autofocus>
+      </div>
+      <div class="search-results-list" id="searchResultsList">
+        <p class="search-hint">উদাহরণ: পথের পাঁচালী, শেষের কবিতা, গোরা, বিভূতিভূষণ, রবীন্দ্রনাথ...</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Book Review Details Modal -->
+  <div class="book-modal" id="bookModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="bookModalTitle">
+    <div class="book-modal-backdrop" id="bookModalBackdrop"></div>
+    <div class="book-modal-dialog">
+      <button class="modal-close-btn" id="bookModalClose" aria-label="বন্ধ করুন">✕</button>
+      <div class="book-modal-body" id="bookModalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Literary Toast Notification -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="script.js?v=4.1"></script>
+</body>
+</html>

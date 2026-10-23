@@ -1,0 +1,19 @@
+{
+  "name": "book-review-website",
+  "version": "1.0.0",
+  "description": "Bengali Book Review Website - পাতার পর পাতা",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build.js",
+    "verify": "node verify_site.js"
+  },
+  "keywords": [
+    "book-reviews",
+    "bengali",
+    "literature"
+  ],
+  "author": "",
+  "license": "ISC"
+}
